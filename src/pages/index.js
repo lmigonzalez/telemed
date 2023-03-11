@@ -20,9 +20,9 @@ export default function Home() {
       </Head>
       <main className={`${arimo.className}`}>
         <Nav/>
-        <Hero />
+        <Hero />       
+        <Showing />
         <Act/>
-        <Showing/>
       </main>
     </>
   );
