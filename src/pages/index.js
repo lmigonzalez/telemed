@@ -5,6 +5,7 @@ import Showing from '@/sections/Showing';
 import DisplayOrders from '@/sections/DisplayOrders';
 import FullfillOrders from '@/sections/FullfillOrders';
 import KitchenWorks from '@/sections/KitchenWorks';
+import StayUpToDate from '@/sections/StayUpToDate';
 
 
 
@@ -25,7 +26,9 @@ export default function Home() {
         <Showing />
         <DisplayOrders/>
         <FullfillOrders/>
-        <KitchenWorks/>
+        <KitchenWorks />
+        <StayUpToDate/>
+
       </main>
     </>
   );
