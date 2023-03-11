@@ -4,6 +4,7 @@ import Hero from '@/sections/Hero';
 import Showing from '@/sections/Showing';
 import DisplayOrders from '@/sections/DisplayOrders';
 import { arimo } from '@/utils/fonts';
+import Act from '@/sections/example';
 
 
 
@@ -19,9 +20,9 @@ export default function Home() {
       </Head>
       <main className={`${arimo.className}`}>
         <Nav/>
-        <Hero/>
-        <Showing/>
-        <DisplayOrders/>
+        <Hero />       
+        <Showing />
+        <Act/>
       </main>
     </>
   );
