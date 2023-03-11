@@ -6,6 +6,7 @@ import DisplayOrders from '@/sections/DisplayOrders';
 import FullfillOrders from '@/sections/FullfillOrders';
 import KitchenWorks from '@/sections/KitchenWorks';
 import StayUpToDate from '@/sections/StayUpToDate';
+import FAQ from '@/sections/FAQ';
 import BuildFor from '@/sections/BuildFor';
 
 
@@ -29,6 +30,7 @@ export default function Home() {
         <KitchenWorks />
         <BuildFor/>
         <StayUpToDate/>
+        <FAQ/>
 
       </main>
     </>
