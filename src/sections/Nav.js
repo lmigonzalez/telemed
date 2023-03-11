@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 
+import { inter } from '@/utils/fonts'
+
 const Nav = () => {
   return (
-	<nav className="font-medium text-[#687288] text-[14px]  w-full ">
+	<nav className={`${inter.className} font-medium text-[#687288] text-[14px]  w-full`}>
           <div className="flex justify-between w-full border-1 border-b-2 px-5">
             <div className="flex py-5">
               <p className="mr-8">Telemed.xyz</p>
