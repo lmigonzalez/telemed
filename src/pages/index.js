@@ -3,12 +3,13 @@ import Nav from '@/sections/Nav';
 import Hero from '@/sections/Hero';
 import Showing from '@/sections/Showing';
 import DisplayOrders from '@/sections/DisplayOrders';
-import Act from '@/sections/example';
+import Act from '@/sections/Example';
 import KitchenWorks from '@/sections/KitchenWorks';
 
 
 
 import { arimo } from '@/utils/fonts';
+import StayUpToDate from '@/sections/StayUpToDate';
 
 export default function Home() {
   return (
@@ -25,7 +26,9 @@ export default function Home() {
         <Showing />
         <DisplayOrders/>
         <Act/>
-        <KitchenWorks/>
+        <KitchenWorks />
+        <StayUpToDate/>
+
       </main>
     </>
   );
