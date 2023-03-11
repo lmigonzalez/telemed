@@ -8,8 +8,6 @@ import KitchenWorks from '@/sections/KitchenWorks';
 import StayUpToDate from '@/sections/StayUpToDate';
 import FAQ from '@/sections/FAQ';
 import BuildFor from '@/sections/BuildFor';
-
-
 import { arimo } from '@/utils/fonts';
 
 export default function Home() {
@@ -22,14 +20,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${arimo.className}`}>
-        <Nav/>
-        <Hero />       
+        <Nav />
+        <Hero />
         <Showing />
-        <DisplayOrders/>
-        <FullfillOrders/>
+        <DisplayOrders />
+        <FullfillOrders />
         <KitchenWorks />
-        <BuildFor/>
-        <StayUpToDate/>
+        <BuildFor />
+        <StayUpToDate />
         <FAQ/>
 
       </main>
