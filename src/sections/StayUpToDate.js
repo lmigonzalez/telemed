@@ -10,8 +10,10 @@ const StayUpToDate = () => {
                 </div>
                 <form className="flex justify-between gap-2">
                     <input className="form-input rounded-md shadow-md border-none bg-[#6666666E] w-full" type="email" defaultValue={"Email address"} />
-                    <button className=" w-32 py-2  rounded bg-[#656EB3] text-white  ">Get more info</button>
+                    <button className="p-2 rounded bg-[#656EB3] text-white whitespace-nowrap  ">Get more info</button>
+                    
                 </form>
+                <p className="p-3">*Please refer to our <a className=" text-blue-600">Privacy Policy</a> for more details.</p>
             </div> 
         </section>
     )
