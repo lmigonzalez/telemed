@@ -6,11 +6,11 @@ const Showing = () => {
       <div className="w-full h-[600px] relative">
         <Image src="/image1.png" alt="showing" fill />
       </div>
-      <div className="flex justify-center items-start py-24 px-8 m-auto">
-        <h3 className="text-5xl font-bold mr-12 leading-[62px] ">
+      <div className="flex justify-between items-center py-24 px-8 m-auto w-[1200px] max-w-full">
+        <h3 className="text-5xl font-bold leading-[62px] w-1/2">
           No matter what’s <br /> cooking, <br /> efficiency matters.
         </h3>
-        <div className='space-y-5'>
+        <div className='space-y-5 w-1/2'>
           <div className="flex items-center">
             <div className="text-white mr-5">
               <Image
