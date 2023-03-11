@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Nav from '@/sections/Nav';
 import Hero from '@/sections/Hero';
 import Showing from '@/sections/Showing';
-
+import DisplayOrders from '@/sections/DisplayOrders';
 import { arimo } from '@/utils/fonts';
 
 
@@ -21,6 +21,7 @@ export default function Home() {
         <Nav/>
         <Hero/>
         <Showing/>
+        <DisplayOrders/>
       </main>
     </>
   );
