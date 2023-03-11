@@ -1,24 +1,24 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 const Showing = () => {
   return (
-    <section className=''>
-      <div className="w-full h-[600px] relative">
+    <section className="">
+      <div className="relative h-[600px] w-full">
         <Image src="/image1.png" alt="showing" fill />
       </div>
-      <div className="flex justify-between items-center py-24 px-8 m-auto w-[1200px] max-w-full">
-        <h3 className="text-5xl font-bold leading-[62px] w-1/2">
+      <div className="m-auto flex w-[1200px] max-w-full items-center justify-between py-24 px-8">
+        <h3 className="w-1/2 text-5xl font-bold leading-[62px]">
           No matter what’s <br /> cooking, <br /> efficiency matters.
         </h3>
-        <div className='space-y-5 w-1/2'>
+        <div className="w-1/2 space-y-5">
           <div className="flex items-center">
-            <div className="text-white mr-5">
+            <div className="mr-5 text-white">
               <Image
-                src={'/kds-benefit-one.svg.svg'}
+                src={"/kds-benefit-one.svg.svg"}
                 alt="kds-benefit-one"
                 width={40}
                 height={40}
-                className="bg-black rounded"
+                className="rounded bg-black"
               />
             </div>
             <p>
@@ -27,13 +27,13 @@ const Showing = () => {
             </p>
           </div>
           <div className="flex items-center">
-            <div className="text-white mr-5">
+            <div className="mr-5 text-white">
               <Image
-                src={'/kds-benefit-two.svg.svg'}
+                src={"/kds-benefit-two.svg.svg"}
                 alt="kds-benefit-one"
                 width={40}
                 height={40}
-                className="bg-black rounded"
+                className="rounded bg-black"
               />
             </div>
             <p>
@@ -42,13 +42,13 @@ const Showing = () => {
             </p>
           </div>
           <div className="flex items-center">
-            <div className="text-white mr-5">
+            <div className="mr-5 text-white">
               <Image
-                src={'/kds-benefit-three.svg.svg'}
+                src={"/kds-benefit-three.svg.svg"}
                 alt="kds-benefit-one"
                 width={40}
                 height={40}
-                className="bg-black rounded"
+                className="rounded bg-black"
               />
             </div>
             <p>

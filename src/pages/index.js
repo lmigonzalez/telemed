@@ -1,15 +1,13 @@
-import Head from 'next/head';
-import Nav from '@/sections/Nav';
-import Hero from '@/sections/Hero';
-import Showing from '@/sections/Showing';
-import DisplayOrders from '@/sections/DisplayOrders';
-import Act from '@/sections/Example';
-import KitchenWorks from '@/sections/KitchenWorks';
+import Head from "next/head";
+import Nav from "@/sections/Nav";
+import Hero from "@/sections/Hero";
+import Showing from "@/sections/Showing";
+import DisplayOrders from "@/sections/DisplayOrders";
+import Act from "@/sections/Example";
+import KitchenWorks from "@/sections/KitchenWorks";
 
-
-
-import { arimo } from '@/utils/fonts';
-import StayUpToDate from '@/sections/StayUpToDate';
+import { arimo } from "@/utils/fonts";
+import StayUpToDate from "@/sections/StayUpToDate";
 
 export default function Home() {
   return (
@@ -21,14 +19,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${arimo.className}`}>
-        <Nav/>
-        <Hero />       
+        <Nav />
+        <Hero />
         <Showing />
-        <DisplayOrders/>
-        <Act/>
+        <DisplayOrders />
+        <Act />
         <KitchenWorks />
-        <StayUpToDate/>
-
+        <StayUpToDate />
       </main>
     </>
   );
