@@ -3,7 +3,7 @@ import Nav from '@/sections/Nav';
 import Hero from '@/sections/Hero';
 import Showing from '@/sections/Showing';
 import DisplayOrders from '@/sections/DisplayOrders';
-import Act from '@/sections/example';
+import FullfillOrders from '@/sections/FullfillOrders';
 import KitchenWorks from '@/sections/KitchenWorks';
 
 
@@ -24,7 +24,7 @@ export default function Home() {
         <Hero />       
         <Showing />
         <DisplayOrders/>
-        <Act/>
+        <FullfillOrders/>
         <KitchenWorks/>
       </main>
     </>
