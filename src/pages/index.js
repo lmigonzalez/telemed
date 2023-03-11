@@ -22,6 +22,7 @@ export default function Home() {
         <Nav/>
         <Hero />       
         <Showing />
+        <DisplayOrders/>
         <Act/>
       </main>
     </>
