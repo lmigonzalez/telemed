@@ -9,6 +9,9 @@ import KitchenWorks from "@/sections/KitchenWorks";
 import { arimo } from "@/utils/fonts";
 import StayUpToDate from "@/sections/StayUpToDate";
 
+
+import { arimo } from '@/utils/fonts';
+
 export default function Home() {
   return (
     <>
@@ -23,7 +26,7 @@ export default function Home() {
         <Hero />
         <Showing />
         <DisplayOrders />
-        <Act />
+        <FullfillOrders />
         <KitchenWorks />
         <StayUpToDate />
       </main>

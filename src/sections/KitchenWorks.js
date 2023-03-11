@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const KitchenWorks = () => {
   return (
-    <section className="m-auto flex w-[1200px]   max-w-full flex-col items-center justify-center p-8 text-center">
-      <h2 className="mb-5 text-5xl  font-bold">
+    <section className="w-[1200px] max-w-full px-8 py-24   m-auto flex flex-col justify-center items-center text-center">
+      <h2 className="text-5xl font-bold  mb-5">
         Tailored to how your kitchen works.
       </h2>
       <p className="mb-16">
