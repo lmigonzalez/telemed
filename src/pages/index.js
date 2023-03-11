@@ -6,7 +6,7 @@ import DisplayOrders from '@/sections/DisplayOrders';
 import FullfillOrders from '@/sections/FullfillOrders';
 import KitchenWorks from '@/sections/KitchenWorks';
 import StayUpToDate from '@/sections/StayUpToDate';
-
+import BuildFor from '@/sections/BuildFor';
 
 
 import { arimo } from '@/utils/fonts';
@@ -27,6 +27,7 @@ export default function Home() {
         <DisplayOrders/>
         <FullfillOrders/>
         <KitchenWorks />
+        <BuildFor/>
         <StayUpToDate/>
 
       </main>
