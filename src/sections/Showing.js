@@ -29,7 +29,7 @@ const Showing = () => {
           <div className="flex items-center">
             <div className="text-white mr-5">
               <Image
-                src={'/kds-benefit-one.svg.svg'}
+                src={'/kds-benefit-two.svg.svg'}
                 alt="kds-benefit-one"
                 width={40}
                 height={40}
@@ -44,7 +44,7 @@ const Showing = () => {
           <div className="flex items-center">
             <div className="text-white mr-5">
               <Image
-                src={'/kds-benefit-one.svg.svg'}
+                src={'/kds-benefit-three.svg.svg'}
                 alt="kds-benefit-one"
                 width={40}
                 height={40}
