@@ -65,6 +65,7 @@ const MyFooter = () => {
             })
         );
     }
+    let dropdown = (window?.innerWidth > 768);
     return (
         <section className='flex flex-col gap-8'>
             <div className='flex flex-col gap-2 md:flex-row md: justify-around'>
@@ -75,13 +76,13 @@ const MyFooter = () => {
                             <a className='flex flex-row hover:text-[#656EB3]'
                                 onClick={() => handleClick(item.id)}>
                                 {item.class}
-                                {item.isActive ? (<img src='arrow-up-svgrepo-com.svg' width={20} />) : (<img src='arrow-down-svgrepo-com.svg' width={20} />)}
+                                {(!dropdown) && (item.isActive ? (<img src='arrow-up-svgrepo-com.svg' width={20} />) : (<img src='arrow-down-svgrepo-com.svg' width={20} />))}
                             </a>
 
                         </div>
-                        <div className='flex flex-col items-start gap-1 '>
+                        <div className='flex flex-col items-start gap-1  '>
                             {
-                                item.isActive && item.subclass.map((el) => (
+                                (item.isActive || dropdown) && item.subclass.map((el) => (
                                     <Link key={el.id} href={el.link}>{el.name}</Link>
                                 ))
                             }

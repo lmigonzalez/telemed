@@ -3,8 +3,8 @@ import Image from "next/image";
 const Showing = () => {
   return (
     <section className="">
-      <div className="relative w-full h-[600px]">
-        <Image src="/image1.png" alt="showing" fill/>
+      <div className="relative flex w-auto h-auto 2xl:justify-center ">
+        <Image src="/image1.png" alt="showing" width={1920} height={1300} />
       </div>
 
       <div className="m-auto flex w-[1200px] max-w-full items-center justify-between py-24 px-4 flex-col md:flex-row md:space-x-8">
