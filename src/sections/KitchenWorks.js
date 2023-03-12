@@ -1,18 +1,36 @@
 import React from "react";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 const KitchenWorks = () => {
   return (
-    <section className="w-[1200px] max-w-full px-4 py-24  flex flex-col  justify-start md:justify-center md:items-center m-auto">
-      <h2 className="text-5xl font-bold  mb-5">
+    <section className="m-auto flex w-[1200px] max-w-full  flex-col justify-start  px-4 py-24 md:items-center md:justify-center">
+      <motion.h2
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.8 }}
+        transition={{ delay: 0.3 }}
+        className="mb-5 text-5xl  font-bold"
+      >
         Tailored to how your kitchen works.
-      </h2>
-      <p className="mb-16">
+      </motion.h2>
+      <motion.p
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.8 }}
+        transition={{ delay: 0.3 }}
+        className="mb-16"
+      >
         Designed for flexibility, Square KDS works with your kitchen setup and
         processes to get the job done.
-      </p>
-      <ul className=" mb-16 flex items-start flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
-        <li className="flex">
+      </motion.p>
+      <ul className=" mb-16 flex flex-col items-start space-y-4 md:flex-row md:space-y-0 md:space-x-6">
+        <motion.li
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ delay: 0.3 }}
+          className="flex"
+        >
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -29,9 +47,15 @@ const KitchenWorks = () => {
             />
           </svg>
           <p>Online orders</p>
-        </li>
+        </motion.li>
 
-        <li className="flex">
+        <motion.li
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ delay: 0.4 }}
+          className="flex"
+        >
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,9 +72,15 @@ const KitchenWorks = () => {
             />
           </svg>
           <p>Prep station</p>
-        </li>
+        </motion.li>
 
-        <li className="flex">
+        <motion.li
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ delay: 0.5 }}
+          className="flex"
+        >
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -67,9 +97,15 @@ const KitchenWorks = () => {
             />
           </svg>
           <p>Expeditor station</p>
-        </li>
+        </motion.li>
 
-        <li className="flex">
+        <motion.li
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ delay: 0.6 }}
+          className="flex"
+        >
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,12 +122,18 @@ const KitchenWorks = () => {
             />
           </svg>
           <p>Multiple stations</p>
-        </li>
+        </motion.li>
       </ul>
 
-      <div className="relative h-60 w-full">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.8 }}
+        transition={{ delay: 0.3 }}
+        className="relative h-60 w-full"
+      >
         <Image src={"/kds-workflow.svg.svg"} alt="kds-workflow" fill />
-      </div>
+      </motion.div>
     </section>
   );
 };

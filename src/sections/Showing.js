@@ -1,17 +1,31 @@
 import React from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+
 const Showing = () => {
   return (
     <section className="">
-      <div className="relative w-full h-[600px]">
-        <Image src="/image1.png" alt="showing" fill/>
+      <div className="relative h-[600px] w-full">
+        <Image src="/image1.png" alt="showing" fill />
       </div>
 
-      <div className="m-auto flex w-[1200px] max-w-full items-center justify-between py-24 px-4 flex-col md:flex-row md:space-x-8">
-        <h3 className="w-full mb-8 md:mb-0 md:w-1/2 text-5xl font-bold leading-[62px]">
+      <motion.div className="m-auto flex w-[1200px] max-w-full flex-col items-center justify-between py-24 px-4 md:flex-row md:space-x-8">
+        <motion.h3
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ delay: 0.3 }}
+          className="mb-8 w-full text-5xl font-bold leading-[62px] md:mb-0 md:w-1/2"
+        >
           No matter what’s cooking, efficiency matters.
-        </h3>
-        <div className="w-full md:w-1/2 space-y-5">
+        </motion.h3>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ delay: 0.3 }}
+          className="w-full space-y-5 md:w-1/2"
+        >
           <div className="flex items-center">
             <div className="mr-5 text-white">
               <Image
@@ -57,8 +71,8 @@ const Showing = () => {
               house.
             </p>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

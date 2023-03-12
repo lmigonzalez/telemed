@@ -1,20 +1,27 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const BuildFor = () => {
   return (
-    <section className="flex flex-col items-center justify-center text-center py-24 px-4 w-[1200px] max-w-full m-auto">
-
-      <div className='order-2 w-full mt-12 lg:mt-0 lg:order-1  lg:mb-40'>
-        <div className="mb-16 w-full">
-
-          <div className="flex flex-col lg:flex-row  w-full items-start lg:items-end justify-end">
+    <section className="m-auto flex w-[1200px] max-w-full flex-col items-center justify-center py-24 px-4 text-center">
+      <div className="order-2 mt-12 w-full lg:order-1 lg:mt-0  lg:mb-40">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ delay: 0.3 }}
+          className="mb-16 w-full"
+        >
+          <div className="flex w-full flex-col  items-start justify-end lg:flex-row lg:items-end">
             <div className="mr-5 flex flex-col items-center  justify-center">
               <p className="w-full text-2xl">Square KDS</p>
-              <p className="w-full text-8xl font-bold  text-[#656EB3] mt-3 lg:mt-0">$20</p>
+              <p className="mt-3 w-full text-8xl  font-bold text-[#656EB3] lg:mt-0">
+                $20
+              </p>
             </div>
-            <div className="flex flex-col lg:flex-row w-full  items-start lg:items-end  justify-between">
-              <p className="text-start mt-3 mb-8 lg:mt-0 lg:mb-0">
+            <div className="flex w-full flex-col items-start  justify-between lg:flex-row  lg:items-end">
+              <p className="mt-3 mb-8 text-start lg:mt-0 lg:mb-0">
                 Per month per device <br /> Free for 30 days. Square for
                 Restaurants Free included.
               </p>
@@ -28,10 +35,15 @@ const BuildFor = () => {
               </div>
             </div>
           </div>
+        </motion.div>
 
-        </div>
-
-        <div className="flex flex-col lg:flex-row w-full items-start space-y-4 lg:space-y-0 lg:items-end justify-between">
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ delay: 0.3 }}
+          className="flex w-full flex-col items-start justify-between space-y-4 lg:flex-row lg:items-end lg:space-y-0"
+        >
           <div className="text-left">
             <p className="mb-4 text-2xl">Multiple devices?</p>
             <p>
@@ -42,27 +54,32 @@ const BuildFor = () => {
           <button className="rounded border-[1px]  border-[#656EB3] px-2 py-3 text-[#656EB3]">
             Learn More
           </button>
-        </div>
+        </motion.div>
       </div>
 
-
-      <div className='order-1 lg:order-2 flex flex-col items-start lg:items-center justify-center'>
-        <h2 className="text-4xl font-bold text-start mb-5 lg:ml-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.8 }}
+        transition={{ delay: 0.3 }}
+        className="order-1 flex flex-col items-start justify-center lg:order-2 lg:items-center"
+      >
+        <h2 className="mb-5 text-start text-4xl font-bold lg:ml-4">
           Built for your bottom line.
         </h2>
         <p className="mb-8 text-start lg:ml-4">
           Easy to set up in minutes, with no installation costs. Spend less time
           training your staff, and more time getting orders out.
         </p>
-        <button className="mb-14 text-[#656EB3] flex items-center">
-          Have questions? Connect with us{' '}
+        <button className="mb-14 flex items-center text-[#656EB3]">
+          Have questions? Connect with us{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-4 h-4"
+            className="h-4 w-4"
           >
             <path
               strokeLinecap="round"
@@ -71,12 +88,15 @@ const BuildFor = () => {
             />
           </svg>
         </button>
-        <div className="relative w-auto max-w-full h-auto">
-          <Image src={'/kds-setup_photo.png.png'} alt="kds-setup_photo" width={1200} height={600} />
+        <div className="relative h-auto w-auto max-w-full">
+          <Image
+            src={"/kds-setup_photo.png.png"}
+            alt="kds-setup_photo"
+            width={1200}
+            height={600}
+          />
         </div>
-      </div>
-
-
+      </motion.div>
     </section>
   );
 };

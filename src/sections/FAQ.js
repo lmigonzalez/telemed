@@ -1,26 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const FAQ = () => {
   const questions = [
     {
       id: 1,
-      question: 'What is Square KDS?',
+      question: "What is Square KDS?",
       answer:
-        'Square KDS is a Kitchen Display System application that allows you to view, track, and fulfill orders via digital tickets in your back of house, replacing traditional paper tickets and kitchen printers.',
+        "Square KDS is a Kitchen Display System application that allows you to view, track, and fulfill orders via digital tickets in your back of house, replacing traditional paper tickets and kitchen printers.",
       isActive: false,
     },
     {
       id: 2,
-      question: 'How much does Square KDS cost, and what comes included?',
+      question: "How much does Square KDS cost, and what comes included?",
       answer:
-        'Square KDS is a Kitchen Display System application that allows you to view, track, and fulfill orders via digital tickets in your back of house, replacing traditional paper tickets and kitchen printers.',
+        "Square KDS is a Kitchen Display System application that allows you to view, track, and fulfill orders via digital tickets in your back of house, replacing traditional paper tickets and kitchen printers.",
       isActive: false,
     },
     {
       id: 3,
-      question: 'What if I need multiple KDS stations?',
+      question: "What if I need multiple KDS stations?",
       answer:
-        'Square KDS is a Kitchen Display System application that allows you to view, track, and fulfill orders via digital tickets in your back of house, replacing traditional paper tickets and kitchen printers.',
+        "Square KDS is a Kitchen Display System application that allows you to view, track, and fulfill orders via digital tickets in your back of house, replacing traditional paper tickets and kitchen printers.",
       isActive: false,
     },
   ];
@@ -38,17 +39,34 @@ const FAQ = () => {
     );
   }
   return (
-    <section className="w-[1200px] max-w-full flex flex-col justify-between items-center m-auto px-4 py-24">
-      <h2 className="text-5xl font-bold mb-16">FAQ</h2>
+    <section className="m-auto flex w-[1200px] max-w-full flex-col items-center justify-between px-4 py-24">
+      <motion.h2
+        initial={{opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.8 }}
+        transition={{ delay: 0.3 }}
+        className="mb-16 text-5xl font-bold"
+      >
+        FAQ
+      </motion.h2>
 
       <ul className="w-full">
         {faq.map((item, index) => {
           return (
-            <li key={item.id} className={`w-full py-4 border-solid ${index === 0 ? 'border-y-2' : 'border-b-2'}`}>
-              <div className="flex justify-between items-start ">
+            <motion.li
+              initial={{ x: index === 0 ? -100 : 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.8 }}
+              transition={{ delay: 0.3 }}
+              key={item.id}
+              className={`w-full border-solid py-4 ${
+                index === 0 ? "border-y-2" : "border-b-2"
+              }`}
+            >
+              <div className="flex items-start justify-between ">
                 <p className="text-2xl">{item.question}</p>
                 <div
-                  className="text-[#656EB3] ml-4"
+                  className="ml-4 text-[#656EB3]"
                   onClick={() => handleAnswer(item.id)}
                 >
                   {item.isActive ? (
@@ -59,7 +77,7 @@ const FAQ = () => {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="w-6 h-6"
+                        className="h-6 w-6"
                       >
                         <path
                           strokeLinecap="round"
@@ -76,7 +94,7 @@ const FAQ = () => {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="w-6 h-6"
+                        className="h-6 w-6"
                       >
                         <path
                           strokeLinecap="round"
@@ -88,11 +106,8 @@ const FAQ = () => {
                   )}
                 </div>
               </div>
-			  {
-				item.isActive &&  <p className="text-base mt-3">{item.answer}</p>
-			  }
-             
-            </li>
+              {item.isActive && <p className="mt-3 text-base">{item.answer}</p>}
+            </motion.li>
           );
         })}
       </ul>
