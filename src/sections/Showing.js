@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 const Showing = () => {
   return (
     <section className="">
-      <div className="relative h-[600px] w-full">
-        <Image src="/image1.png" alt="showing" fill />
+      <div className="relative flex w-auto h-auto 2xl:justify-center ">
+        <Image src="/image1.png" alt="showing" width={1920} height={1300} />
       </div>
 
       <motion.div className="m-auto flex w-[1200px] max-w-full flex-col items-center justify-between py-24 px-4 md:flex-row md:space-x-8">

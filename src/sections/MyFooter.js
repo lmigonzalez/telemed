@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 const list = [
@@ -65,23 +65,31 @@ const MyFooter = () => {
             })
         );
     }
+
+    const [dropDown, setDropDown] = useState(false)
+
+    useEffect(() => setDropDown(window.innerWidth > 768)
+        , [typeof window !== 'undefined' && window.onresize])
+
+
+
     return (
         <section className='flex flex-col gap-8'>
             <div className='flex flex-col gap-2 md:flex-row md: justify-around'>
                 {opens.map((item) =>
                 (
-                    <div key={item.id} className='py-4 space-x-36'>
-                        <div className='flex flex-col items-center gap-2 '>
+                    <div key={item.id} className=' flex flex-col py-4  gap-1 items-center md:items-start'>
+                        <div className='flex flex-col  gap-2 '>
                             <a className='flex flex-row hover:text-[#656EB3]'
                                 onClick={() => handleClick(item.id)}>
                                 {item.class}
-                                {item.isActive ? (<img src='arrow-up-svgrepo-com.svg' width={20} />) : (<img src='arrow-down-svgrepo-com.svg' width={20} />)}
+                                {(!dropDown) && (item.isActive ? (<img src='arrow-up-svgrepo-com.svg' width={20} />) : (<img src='arrow-down-svgrepo-com.svg' width={20} />))}
                             </a>
 
                         </div>
-                        <div className='flex flex-col items-start gap-1 '>
+                        <div className='flex flex-col items-end md:items-start gap-1  '>
                             {
-                                item.isActive && item.subclass.map((el) => (
+                                (item.isActive || dropDown) && item.subclass.map((el) => (
                                     <Link key={el.id} href={el.link}>{el.name}</Link>
                                 ))
                             }
