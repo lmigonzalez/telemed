@@ -7,7 +7,7 @@ const BuildFor = () => {
     <section className="m-auto flex w-[1200px] max-w-full flex-col items-center justify-center py-24 px-4 text-center">
       <div className="order-2 mt-12 w-full lg:order-1 lg:mt-0  lg:mb-40">
         <motion.div
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.8 }}
           transition={{ delay: 0.3 }}

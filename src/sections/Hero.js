@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion} from "framer-motion";
 
 const Hero = () => {
@@ -10,7 +11,9 @@ const Hero = () => {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="flex flex-col items-start justify-center  py-20 px-4 md:items-center"
     >
-      <h1 className="mb-6 text-5xl font-bold md:text-7xl">Telemed.xyz</h1>
+      <h1 className="mb-6 text-5xl font-bold md:text-7xl">
+        Telemed.xyz
+      </h1>
       <h3 className="mb-8 max-w-[500px] text-start text-2xl font-normal md:text-center md:text-3xl">
         An efficient kitchen display system you can rely on. Organize and
         fulfill orders from anywhere, in one affordable solution.

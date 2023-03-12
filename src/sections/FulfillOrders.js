@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-// import cn from "classnames";
-//import useDeviceSize from '@/utils/windowSize';
 
-// in here here must deploy a card list
-const FullfillOrders = () => {
+const FulfillOrders = () => {
   return (
     <section className="flex flex-col-reverse justify-between bg-white py-24 text-white md:flex-row md:items-center md:space-x-8 md:bg-black">
       <motion.div
@@ -96,4 +93,4 @@ const FullfillOrders = () => {
   );
 };
 
-export default FullfillOrders;
+export default FulfillOrders;

@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const DisplayOrders = () => {
   return (
     <motion.section
-      initial={{ y: 100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
+      initial={{ opacity: 0 }}
+      whileInView={{  opacity: 1 }}
       viewport={{ once: true, amount: 0.8 }}
       transition={{ delay: 0.3 }}
       className="py-8 px-4 text-start md:text-center"

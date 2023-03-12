@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { inter } from "@/utils/fonts";
 
@@ -23,8 +24,11 @@ const Nav = () => {
         className={`${inter.className} hidden w-full text-[14px]  font-medium text-[#687288] lg:block`}
       >
         <div className="border-1 flex w-full justify-between border-b-2 px-5">
-          <div className="flex py-5">
-            <p className="mr-8">Telemed.xyz</p>
+          <div className="flex  items-center py-5">
+            <p className="mr-8 mb-4">
+              {" "}
+              <Image src={"/logo_text.svg"} alt="logo" width={150} height={150} />
+            </p>
             <ul className="flex space-x-4">
               <li>
                 {" "}
@@ -116,7 +120,10 @@ const Nav = () => {
 
       <nav className="block lg:hidden">
         <div className="relative flex items-center justify-between border-b-2 border-solid py-8 px-4">
-          <p>Telemed.xyz</p>
+          <p className="mr-8">
+            {" "}
+            <Image src={"/logo_text.svg"} alt="logo" width={150} height={150} />
+          </p>
           <div className="flex space-x-4">
             <Link href="">
               <svg
@@ -141,7 +148,7 @@ const Nav = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="h-8 w-8"
+                className="mr-4 h-8 w-8"
               >
                 <path
                   strokeLinecap="round"
@@ -158,7 +165,6 @@ const Nav = () => {
                 initial={{ y: -200, opacity: 0.5 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ damping: 10, stiffness: 100, duration: 0.3 }}
-
                 className="absolute left-0 top-full z-10 w-full bg-white shadow-xl"
               >
                 <ul className="flex flex-col items-center justify-center space-y-4 py-4">
@@ -190,7 +196,7 @@ const Nav = () => {
 
         <div className="relative flex items-center justify-between py-8 px-4">
           <p>Telemedicine</p>
-          <button onClick={showSubNavbar}>
+          <button onClick={showSubNavbar} className=" mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -212,7 +218,6 @@ const Nav = () => {
                 initial={{ y: -200, opacity: 0.5 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ damping: 10, stiffness: 100, duration: 0.3 }}
-  
                 className="absolute left-0 top-full z-40 w-full bg-white shadow-xl"
               >
                 <ul className="flex flex-col items-center justify-center space-y-4 py-4">

@@ -3,15 +3,14 @@ import Nav from '@/sections/Nav';
 import Hero from '@/sections/Hero';
 import Showing from '@/sections/Showing';
 import DisplayOrders from '@/sections/DisplayOrders';
-import FullfillOrders from '@/sections/FullfillOrders';
+import FulfillOrders from '@/sections/FulfillOrders';
 import KitchenWorks from '@/sections/KitchenWorks';
 import StayUpToDate from '@/sections/StayUpToDate';
 import FAQ from '@/sections/FAQ';
 import BuildFor from '@/sections/BuildFor';
 import Footer from '@/sections/Footer';
 import { arimo } from '@/utils/fonts';
-import MyFooter from '@/sections/MyFooter';
-import Services from '@/sections/Services';
+
 
 export default function Home() {
   return (
@@ -27,15 +26,12 @@ export default function Home() {
         <Hero />
         <Showing />
         <DisplayOrders />
-        <FullfillOrders />
+        <FulfillOrders />
         <KitchenWorks />
         <BuildFor />
         <StayUpToDate />
         <FAQ />
-        {/* <Services /> */}
         <Footer/>
-        {/* <MyFooter /> */}
-
       </main>
     </>
   );
