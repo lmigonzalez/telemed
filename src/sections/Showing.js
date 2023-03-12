@@ -6,7 +6,7 @@ const Showing = () => {
       <div className="relative h-[600px] w-full">
         <Image src="/image1.png" alt="showing" fill />
       </div>
-      <div className="m-auto flex w-[1200px] max-w-full items-center justify-between py-24 px-8">
+      <div className="m-auto flex w-[1200px] max-w-full items-center justify-between py-24 px-8 flex-col sm:flex-row ">
         <h3 className="w-1/2 text-5xl font-bold leading-[62px]">
           No matter what’s <br /> cooking, <br /> efficiency matters.
         </h3>
