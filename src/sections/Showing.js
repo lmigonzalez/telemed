@@ -12,46 +12,42 @@ const Showing = () => {
           No matter what’s cooking, efficiency matters.
         </h3>
         <div className="w-full md:w-1/2 space-y-5">
-          <div className="flex items-center">
-            <div className="mr-5 text-white">
-              <Image
-                src={"/kds-benefit-one.svg.svg"}
-                alt="kds-benefit-one"
-                width={40}
-                height={40}
-                className="rounded bg-black"
-              />
-            </div>
+          <div className="flex items-center gap-2">
+
+            <Image
+              src={"/kds-benefit-one.svg.svg"}
+              alt="kds-benefit-one"
+              width={40}
+              height={40}
+              className="rounded bg-black whitespace-nowrap"
+            />
+
             <p>
               Keep orders synced with a direct link between front and back of
               house.
             </p>
           </div>
-          <div className="flex items-center">
-            <div className="mr-5 text-white">
-              <Image
-                src={"/kds-benefit-two.svg.svg"}
-                alt="kds-benefit-one"
-                width={40}
-                height={40}
-                className="rounded bg-black"
-              />
-            </div>
+          <div className="flex items-center gap-2">
+            <Image
+              src={"/kds-benefit-two.svg.svg"}
+              alt="kds-benefit-one"
+              width={40}
+              height={40}
+              className="rounded bg-black whitespace-nowrap"
+            />
             <p>
               Keep orders synced with a direct link between front and back of
               house.
             </p>
           </div>
-          <div className="flex items-center">
-            <div className="mr-5 text-white">
-              <Image
-                src={"/kds-benefit-three.svg.svg"}
-                alt="kds-benefit-one"
-                width={40}
-                height={40}
-                className="rounded bg-black"
-              />
-            </div>
+          <div className="flex items-center gap-2">
+            <Image
+              src={"/kds-benefit-three.svg.svg"}
+              alt="kds-benefit-one"
+              width={40}
+              height={40}
+              className="rounded bg-black whitespace-nowrap"
+            />
             <p>
               Keep orders synced with a direct link between front and back of
               house.
