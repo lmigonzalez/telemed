@@ -26,16 +26,14 @@ const Showing = () => {
           transition={{ delay: 0.3 }}
           className="w-full space-y-5 md:w-1/2"
         >
-          <div className="flex items-center">
-            <div className="mr-5 text-white">
-              <Image
-                src={"/kds-benefit-one.svg.svg"}
-                alt="kds-benefit-one"
-                width={40}
-                height={40}
-                className="rounded bg-black"
-              />
-            </div>
+          <div className="flex items-center gap-2">
+            <Image
+              src={"/kds-benefit-one.svg.svg"}
+              alt="kds-benefit-one"
+              width={40}
+              height={40}
+              className="rounded bg-black whitespace-nowrap"
+            />
             <p>
               Keep orders synced with a direct link between front and back of
               house.
