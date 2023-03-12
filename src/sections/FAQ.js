@@ -38,17 +38,17 @@ const FAQ = () => {
     );
   }
   return (
-    <section className="w-[1200px] max-w-full flex flex-col justify-between items-center m-auto py-24">
+    <section className="w-[1200px] max-w-full flex flex-col justify-between items-center m-auto px-4 py-24">
       <h2 className="text-5xl font-bold mb-16">FAQ</h2>
 
       <ul className="w-full">
         {faq.map((item, index) => {
           return (
             <li key={item.id} className={`w-full py-4 border-solid ${index === 0 ? 'border-y-2' : 'border-b-2'}`}>
-              <div className="flex justify-between">
+              <div className="flex justify-between items-start ">
                 <p className="text-2xl">{item.question}</p>
                 <div
-                  className="text-[#656EB3]"
+                  className="text-[#656EB3] ml-4"
                   onClick={() => handleAnswer(item.id)}
                 >
                   {item.isActive ? (

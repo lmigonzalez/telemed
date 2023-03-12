@@ -2,7 +2,7 @@ import React from "react";
 
 const StayUpToDate = () => {
   return (
-    <section className="flex flex-col items-center gap-1 py-20 ">
+    <section className="flex flex-col items-center gap-1 px-4 py-24 ">
       <div>
         <div className=" justify-center text-center">
           <h2 className="mb-5 text-5xl  font-bold">Stay up to date</h2>
