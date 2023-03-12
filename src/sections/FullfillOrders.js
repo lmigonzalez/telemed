@@ -4,7 +4,7 @@ import Image from 'next/image';
 // in here here must deploy a card list
 const FullfillOrders = () => {
   return (
-    <section className="relative flex text-white sm:items-center justify-center bg-black py-36 gap-20 flex-col-reverse sm:flex-row">
+    <section className="relative flex text-white sm:items-center justify-between bg-black py-36 gap-20 flex-col-reverse sm:flex-row">
       <div className="flex flex-col ">
         <h3 className="text-5xl font-bold leading-[62px] mb-8">
           Fulfill orders <br /> accurately,
