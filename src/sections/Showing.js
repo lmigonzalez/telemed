@@ -18,68 +18,56 @@ const Showing = () => {
           className="mb-8 w-full text-5xl font-bold leading-[62px] md:mb-0 md:w-1/2"
         >
           No matter what’s cooking, efficiency matters.
-        </h3>
-        <div className="w-full md:w-1/2 space-y-5">
+        </motion.h3>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ delay: 0.3 }}
+          className="w-full space-y-5 md:w-1/2"
+        >
+          <div className="flex items-center">
+            <div className="mr-5 text-white">
+              <Image
+                src={"/kds-benefit-one.svg.svg"}
+                alt="kds-benefit-one"
+                width={40}
+                height={40}
+                className="rounded bg-black"
+              />
+            </div>
+            <p>
+              Keep orders synced with a direct link between front and back of
+              house.
+            </p>
+          </div>
           <div className="flex items-center gap-2">
-
             <Image
-              src={"/kds-benefit-one.svg.svg"}
+              src={"/kds-benefit-two.svg.svg"}
               alt="kds-benefit-one"
               width={40}
               height={40}
               className="rounded bg-black whitespace-nowrap"
             />
-
-          </motion.h3>
-          <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true, amount: 0.8 }}
-            transition={{ delay: 0.3 }}
-            className="w-full space-y-5 md:w-1/2"
-          >
-            <div className="flex items-center">
-              <div className="mr-5 text-white">
-                <Image
-                  src={"/kds-benefit-one.svg.svg"}
-                  alt="kds-benefit-one"
-                  width={40}
-                  height={40}
-                  className="rounded bg-black"
-                />
-              </div>
-              <p>
-                Keep orders synced with a direct link between front and back of
-                house.
-              </p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Image
-                src={"/kds-benefit-two.svg.svg"}
-                alt="kds-benefit-one"
-                width={40}
-                height={40}
-                className="rounded bg-black whitespace-nowrap"
-              />
-              <p>
-                Keep orders synced with a direct link between front and back of
-                house.
-              </p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Image
-                src={"/kds-benefit-three.svg.svg"}
-                alt="kds-benefit-one"
-                width={40}
-                height={40}
-                className="rounded bg-black whitespace-nowrap"
-              />
-              <p>
-                Keep orders synced with a direct link between front and back of
-                house.
-              </p>
-            </div>
-          </motion.div>
+            <p>
+              Keep orders synced with a direct link between front and back of
+              house.
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <Image
+              src={"/kds-benefit-three.svg.svg"}
+              alt="kds-benefit-one"
+              width={40}
+              height={40}
+              className="rounded bg-black whitespace-nowrap"
+            />
+            <p>
+              Keep orders synced with a direct link between front and back of
+              house.
+            </p>
+          </div>
+        </motion.div>
       </motion.div>
     </section>
   );
