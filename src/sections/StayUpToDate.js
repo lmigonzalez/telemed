@@ -11,7 +11,7 @@ const StayUpToDate = () => {
             latest promotions.
           </p>
         </div>
-        <form className="flex justify-between gap-2">
+        <form className="flex flex-col md:flex-row justify-between gap-2">
           <input
             className="form-input w-full rounded-md border-none bg-[#6666666E] shadow-md"
             type="email"

@@ -10,6 +10,8 @@ import FAQ from '@/sections/FAQ';
 import BuildFor from '@/sections/BuildFor';
 import Footer from '@/sections/Footer';
 import { arimo } from '@/utils/fonts';
+import MyFooter from '@/sections/MyFooter';
+import Services from '@/sections/Services';
 
 export default function Home() {
   return (
@@ -29,8 +31,10 @@ export default function Home() {
         <KitchenWorks />
         <BuildFor />
         <StayUpToDate />
-        <FAQ/>
-        <Footer/>
+        <FAQ />
+        {/* <Footer/> */}
+        <Services />
+        <MyFooter />
 
       </main>
     </>

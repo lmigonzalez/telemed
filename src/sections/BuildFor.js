@@ -4,12 +4,12 @@ import Image from 'next/image';
 const BuildFor = () => {
   return (
     <section className="flex flex-col items-center justify-center text-center py-24">
-      <h2 className="text-5xl font-bold text-center mb-5">
+      <h2 className="text-4xl font-bold text-start mb-5 ml-4">
         Built for your bottom line.
       </h2>
-      <p className="mb-8">
+      <p className="mb-8 text-start ml-4">
         Easy to set up in minutes, with no installation costs. Spend less time
-        training your <br /> staff, and more time getting orders out.
+        training your staff, and more time getting orders out.
       </p>
       <button className="mb-14 text-[#656EB3] flex items-center">
         Have questions? Connect with us{' '}
@@ -28,8 +28,8 @@ const BuildFor = () => {
           />
         </svg>
       </button>
-      <div className="relative w-[1200px] max-w-full h-[600px]">
-        <Image src={'/kds-setup_photo.png.png'} alt="kds-setup_photo" fill />
+      <div className="relative w-auto max-w-full h-auto">
+        <Image src={'/kds-setup_photo.png.png'} alt="kds-setup_photo" width={1200} height={600} />
       </div>
     </section>
   );
