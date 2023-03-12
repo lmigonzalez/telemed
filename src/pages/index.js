@@ -8,6 +8,7 @@ import KitchenWorks from '@/sections/KitchenWorks';
 import StayUpToDate from '@/sections/StayUpToDate';
 import FAQ from '@/sections/FAQ';
 import BuildFor from '@/sections/BuildFor';
+import Footer from '@/sections/Footer';
 import { arimo } from '@/utils/fonts';
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         <BuildFor />
         <StayUpToDate />
         <FAQ/>
+        <Footer/>
 
       </main>
     </>

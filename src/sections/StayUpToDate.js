@@ -22,7 +22,7 @@ const StayUpToDate = () => {
           </button>
         </form>
         <p className="mt-7 before:content-['*']">
-          Please refer to our <a href={''} className=" text-blue-600 hover:text-blue-900" >Privacy Policy</a>{" "}
+          Please refer to our <a href={''} className=" text-[#656EB3]" >Privacy Policy</a>{" "}
           for more details.
         </p>
       </div>
