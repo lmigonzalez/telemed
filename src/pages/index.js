@@ -32,9 +32,9 @@ export default function Home() {
         <BuildFor />
         <StayUpToDate />
         <FAQ />
-        {/* <Footer/> */}
-        <Services />
-        <MyFooter />
+        {/* <Services /> */}
+        <Footer/>
+        {/* <MyFooter /> */}
 
       </main>
     </>
