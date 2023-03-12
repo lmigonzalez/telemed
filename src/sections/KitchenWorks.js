@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const KitchenWorks = () => {
   return (
-    <section className="w-[1200px] max-w-full px-4 py-24  flex flex-col  ">
+    <section className="w-[1200px] max-w-full px-4 py-24  flex flex-col  justify-start md:justify-center md:items-center">
       <h2 className="text-5xl font-bold  mb-5">
         Tailored to how your kitchen works.
       </h2>
@@ -11,7 +11,7 @@ const KitchenWorks = () => {
         Designed for flexibility, Square KDS works with your kitchen setup and
         processes to get the job done.
       </p>
-      <ul className=" mb-16 flex flex-col">
+      <ul className=" mb-16 flex items-start flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
         <li className="flex">
           {" "}
           <svg

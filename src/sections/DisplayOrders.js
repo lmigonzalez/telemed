@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const DisplayOrders = () => {
   return (
-    <section className="py-8 text-center">
-      <h2 className="mb-5 text-center text-5xl font-bold leading-[62px]">
-        Display orders from <br /> anywhere, on one screen.
+    <section className="py-8 px-4 text-start md:text-center">
+      <h2 className="mb-5 text-5xl font-bold leading-[62px]">
+        Display orders from <br/> anywhere, on one screen.
       </h2>
       <p className="mb-14">
         Whether you take orders through POS, Square Online site, or delivery

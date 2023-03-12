@@ -8,7 +8,7 @@ import Image from 'next/image';
 // in here here must deploy a card list
 const FullfillOrders = () => {
   return (
-    <section className="flex text-white md:items-center justify-between bg-white md:bg-black py-36 md:space-x-8 flex-col-reverse md:flex-row">
+    <section className="flex text-white md:items-center justify-between bg-white md:bg-black py-24 md:space-x-8 flex-col-reverse md:flex-row">
       <div className="flex items-end flex-col mt-8 md:mt-0 md:w-1/2">
         <div className='px-4 text-black md:text-white'>
           <h3 className="text-5xl font-bold leading-[62px] mb-8">

@@ -3,15 +3,15 @@ import Image from "next/image";
 const Showing = () => {
   return (
     <section className="">
-      <div className="relative w-auto max-w-full h-auto">
-        <Image src="/image1.png" alt="showing" width={1200} height={600} />
+      <div className="relative w-full h-[600px]">
+        <Image src="/image1.png" alt="showing" fill/>
       </div>
 
-      <div className="m-auto flex w-[1200px] max-w-full items-center justify-between py-24 px-8 flex-col sm:flex-row ">
-        <h3 className="w-1/2 text-5xl font-bold leading-[62px]">
-          No matter what’s <br /> cooking, <br /> efficiency matters.
+      <div className="m-auto flex w-[1200px] max-w-full items-center justify-between py-24 px-4 flex-col md:flex-row md:space-x-8">
+        <h3 className="w-full mb-8 md:mb-0 md:w-1/2 text-5xl font-bold leading-[62px]">
+          No matter what’s cooking, efficiency matters.
         </h3>
-        <div className="w-1/2 space-y-5">
+        <div className="w-full md:w-1/2 space-y-5">
           <div className="flex items-center">
             <div className="mr-5 text-white">
               <Image
